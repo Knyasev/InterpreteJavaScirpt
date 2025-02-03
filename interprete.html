@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interprete de JavaScripts </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interprete de JavaScripts</h1> <!-- Título aquí -->
+        <div class="editor-container">
+            <textarea id="codigoFuente" placeholder="Escribe tu código aquí..."></textarea>
+            <pre><code id="codigoResaltado" class="language-javascript"></code></pre>
+        </div>
+        <button id="btnAnalizar">Analizar Código</button>
+        <div class="output-container">
+            <div class="output-section">
+                <h2>Tokens</h2>
+                <pre id="salidaTokens"></pre>
+            </div>
+            <div class="output-section">
+                <h2>Árbol Sintáctico</h2>
+                <pre id="salidaArbol"></pre>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="trabajof.js"></script>
+</body>
+</html>
